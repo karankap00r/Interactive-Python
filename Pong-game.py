@@ -23,7 +23,7 @@ ball_vel =[]		#not yet initialized,will be initialized once spawn_ball() is call
 # if direction is RIGHT, the ball's velocity is upper right, else upper left
 
 def spawn_ball(direction):
-    global ball_pos, ball_vel # these are vectors stored as lists
+    global ball_pos, ball_vel  # these are vectors stored as lists
     ball_pos=[WIDTH // 2,HEIGHT // 2]
     if direction == "right" :
         ball_vel = [random.randrange(2, 4),-random.randrange(1, 3)]
